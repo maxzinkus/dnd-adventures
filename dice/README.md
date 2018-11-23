@@ -34,7 +34,7 @@ $ ./dice
 ```
 
 ```
-$ dice_test
+$ ./dice_test
 Test mode enabled, iterations = 1000000
 > 1d20
   1:0.049928 |****
