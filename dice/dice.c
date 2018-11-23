@@ -22,7 +22,10 @@ typedef enum {
    PERCENTILE = 100
 } Die;
 
-#define D6_THRESHOLD 240
+/* random byte < threshold
+ * so that random byte % threshold is uniform 
+ */
+#define D6_THRESHOLD 252
 #define D10_THRESHOLD 250
 #define D20_THRESHOLD 240
 #define PERC_THRESHOLD 200
@@ -60,23 +63,18 @@ unsigned int roll(unsigned int num, Die faces, char op, unsigned int mod) {
          if (in != 1) {
             abort();
          }
-         if (thresh > 0 && r > thresh) {
+         if (thresh > 0 && r >= thresh) {
             in = 0;
          }
       } while (in < 1);
       r = (r % faces) + 1;
       result += r;
+   } 
+   if (op == '+') {
+      result += mod;
    }
-   
-   switch (op) {
-      case '+':
-         result += mod;
-         break;
-      case '-':
-         result -= mod;
-         break;
-      default:
-         break;
+   else if (op == '-') {
+      result -= mod;
    }
    return result;
 }
@@ -128,10 +126,6 @@ int main(int argc, char **argv) {
                op = '+';
                mod = 0;
             }
-            if (num == 0) {
-               prev = false;
-               break;
-            }
             switch (faces) {
                case D4:
                case D6:
@@ -146,11 +140,8 @@ int main(int argc, char **argv) {
                   printf("%u\n", roll(num, faces, op, mod));
 #endif
                   break;
-               default:
-                  prev = false;
-                  break;
+               /* if default, fall all the way down to the outer default */
             }
-            break;
          default:
             prev = false;
             break;
