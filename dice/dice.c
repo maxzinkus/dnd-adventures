@@ -32,10 +32,12 @@ typedef enum {
 
 #ifdef TEST_MODE
 #define TEST_LEN 1000000
-void histogram(unsigned int num, Die faces, char op, unsigned int mod);
+void histogram(const unsigned int num, const Die faces,
+               const char op, const unsigned int mod);
 #endif
 
-unsigned int roll(unsigned int num, Die faces, char op, unsigned int mod) {
+unsigned int roll(unsigned int num, const Die faces,
+                  const char op, const unsigned int mod) {
    unsigned int result = 0;
    unsigned char r;
    unsigned char thresh;
@@ -61,7 +63,10 @@ unsigned int roll(unsigned int num, Die faces, char op, unsigned int mod) {
       do {
          in = fread(&r, sizeof(unsigned char), 1, urandom);
          if (in != 1) {
-            abort();
+            if (ferror(urandom)) {
+               perror("fread");
+            }
+            return 0;
          }
          if (thresh > 0 && r >= thresh) {
             in = 0;
@@ -76,10 +81,13 @@ unsigned int roll(unsigned int num, Die faces, char op, unsigned int mod) {
    else if (op == '-') {
       result -= mod;
    }
+   else {
+      return 0;
+   }
    return result;
 }
 
-int main(int argc, char **argv) {
+int main() {
 #ifdef TEST_MODE
    printf("Test mode enabled, iterations = %u\n", TEST_LEN);
 #endif
@@ -112,7 +120,11 @@ int main(int argc, char **argv) {
             }
             else if (prev) { /* newline */
                printf(FORMAT, num, faces, op, mod);
+#ifdef TEST_MODE
+               histogram(num, faces, op, mod);
+#else
                printf("%u\n", roll(num, faces, op, mod));
+#endif
             }
             break;
          case 4: /* all inputs */
@@ -140,8 +152,11 @@ int main(int argc, char **argv) {
                   printf("%u\n", roll(num, faces, op, mod));
 #endif
                   break;
-               /* if default, fall all the way down to the outer default */
+               default:
+                  prev = false;
+                  break;
             }
+            break;
          default:
             prev = false;
             break;
@@ -153,8 +168,11 @@ int main(int argc, char **argv) {
 }
 
 #ifdef TEST_MODE
-void histogram(unsigned int num, Die faces, char op, unsigned int mod) {
-   unsigned int *results;
+void histogram(const unsigned int num, const Die faces,
+               const char op, const unsigned int mod) {
+   unsigned int hist_offset, *results;
+   char hist[100];
+   memset(hist, '*', 100);
    results = calloc((num*faces)+1, sizeof(unsigned int));
    if (!results) {
       perror("calloc");
@@ -169,17 +187,13 @@ void histogram(unsigned int num, Die faces, char op, unsigned int mod) {
       }
    }
    for (unsigned int i = 1; i <= num*faces; i++) {
-      if (op == '-') {
-         printf("%10u:%6f |", i-mod, ((float)results[i])/TEST_LEN);
-      }
-      else {
-         printf("%10u:%6f |", i+mod, ((float)results[i])/TEST_LEN);
-      }
-      for (unsigned int j = 0;
-           j < (unsigned int)((((float)results[i])/TEST_LEN)*100.0f); j++) {
-         printf("*");
-      }
-      printf("\n");
+      printf("%3u:%6f |",
+             op == '-' ? i-mod : i+mod,
+             ((float)results[i])/TEST_LEN);
+      hist_offset = (unsigned int)((results[i]*100.0f)/TEST_LEN);
+      hist[hist_offset] = '\0';
+      printf("%s\n", hist);
+      hist[hist_offset] = '*';
    }
 }
 #endif
