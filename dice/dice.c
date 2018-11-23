@@ -170,6 +170,7 @@ int main() {
 #ifdef TEST_MODE
 void histogram(const unsigned int num, const Die faces,
                const char op, const unsigned int mod) {
+   double avg = 0.0f;
    unsigned int hist_offset, *results;
    char hist[101];
    memset(hist, '*', 101);
@@ -194,6 +195,8 @@ void histogram(const unsigned int num, const Die faces,
       hist[hist_offset] = '\0';
       printf("%s\n", hist);
       hist[hist_offset] = '*';
+      avg += (((double)i)*results[i])/TEST_LEN;
    }
+   printf("Mean: %f\n", avg);
 }
 #endif
