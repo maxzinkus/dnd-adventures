@@ -1,7 +1,8 @@
 Dice
 ====
 
-Reasonably fast dice roller for D&D.
+Reasonably fast dice roller for D&D. Basically realtime on my laptop up to 2.5 million dice (e.g. `2500000d20`)
+and if your players are dealing that much damage, uh.. nerf them.
 
 # Usage
 
@@ -21,7 +22,8 @@ and the result. Control-d to exit.
 
 To view pretty histograms of dice roll outputs , `make test`
 
-Examples:
+# Examples
+
 ```
 $ ./dice
 > 1d20
@@ -98,3 +100,8 @@ Mean: 10.005516
 Mean: 10.503115
 > 
 ```
+
+# Notes
+
+It might be fun to use a seeded generator and save the seed, then have code that takes in a seed and a transcript
+of rolls and verifies they were generated using that seed.
