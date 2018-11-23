@@ -171,8 +171,8 @@ int main() {
 void histogram(const unsigned int num, const Die faces,
                const char op, const unsigned int mod) {
    unsigned int hist_offset, *results;
-   char hist[100];
-   memset(hist, '*', 100);
+   char hist[101];
+   memset(hist, '*', 101);
    results = calloc((num*faces)+1, sizeof(unsigned int));
    if (!results) {
       perror("calloc");
