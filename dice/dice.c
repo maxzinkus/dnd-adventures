@@ -31,7 +31,7 @@ typedef enum {
 #define PERC_THRESHOLD 200
 
 #ifdef TEST_MODE
-#define TEST_LEN 1000000
+static unsigned long int TEST_LEN = 1000000;
 void histogram(const unsigned int num, const Die faces,
                const char op, const unsigned int mod);
 #endif
@@ -89,7 +89,10 @@ unsigned int roll(unsigned int num, const Die faces,
 
 int main() {
 #ifdef TEST_MODE
-   printf("Test mode enabled, iterations = %u\n", TEST_LEN);
+   if (getenv("TEST_LEN")) {
+      TEST_LEN = strtol(getenv("TEST_LEN"), NULL, 0);
+   }
+   printf("Test mode enabled, iterations = %lu\n", TEST_LEN);
 #endif
    urandom = fopen(RAND_SRC, "rb");
    if (!urandom) {
