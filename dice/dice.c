@@ -1,3 +1,4 @@
+#include <errno.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
@@ -90,7 +91,12 @@ unsigned int roll(unsigned int num, const Die faces,
 int main() {
 #ifdef TEST_MODE
    if (getenv("TEST_LEN")) {
+      errno = 0;
       TEST_LEN = strtol(getenv("TEST_LEN"), NULL, 0);
+      if (errno) {
+         perror("strtol/getenv");
+         return 1;
+      }
    }
    printf("Test mode enabled, iterations = %lu\n", TEST_LEN);
 #endif
