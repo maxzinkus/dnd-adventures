@@ -55,13 +55,13 @@ The next morning Melvin and his guard will be awaiting the players in the inn.
 not you, you don't seem particularly bookish, but perhaps you?"
 
 "This is Archie, he's here in case I get into a spot of trouble on my travels. He's a quiet one!
-Which is great! He's a great listener! Aren't you, Archie?" (Archie simply nods, or is motionless)
+Which is great! He's a great listener! Aren't you, Archie?" (Archie is motionless)
 
 Wizards walk in twos and threes around the grounds, noses buried in books or chatting. They
 entirely disregard the travelers, aside from the occasional "Have you been to the shop?
 There are some quite fantastic magical trinkets to take home."
 
-Light of various colors randomly illuminates windows up and down the central towers of the
+Light of various colors randomly illuminate windows up and down the central towers of the
 Library, and occasional puffs of smoke or dust of various colors blasts out of them. The messes
 each seem to magically clean themselves leaving the dull red stone clean and smooth.
 
@@ -89,7 +89,7 @@ X - Rainbow-colors of dust blast out of the doorway dealing 2d6 force to whoever
     Looking into the room all one can see is glowing lights floating in what seems to be shimmering
     light and color.
 X - A wizard is standing in front of a pentagram, candles lit in each corner. She ushers you in,
-    and you all feel yourselves pulled into the room. The doorknob disappears behind you.
+    and you all feel yourselves pulled into the room. The door slams and the doorknob disappears behind you.
     "Wonderful! Wonderful, welcome. I need your help with something. She disappears into a burst
     of shadows, and a shadowy figure arises in the center of the pentagram.
     Pseudo-demon
@@ -104,7 +104,7 @@ X - A wizard is standing in front of a pentagram, candles lit in each corner. Sh
     see? A mini-balor! That belches! Such fun!"
     The door behind you all swings open and you're thrown out of the room. The door then slams
     shut in front of you all.
-X - The room has floor-to ceiling bookshelves with books and scrolls. Searching the room doesn't
+X - The room has floor-to-ceiling bookshelves with books and scrolls. Searching the room doesn't
     reveal any of the ancient books Melvin wants to find, but it does anger one of the books, which
     jumps from the shelf and begins chomping and racing towards the party!
     HP 12 Weakness to fire
@@ -112,7 +112,7 @@ X - The room has floor-to ceiling bookshelves with books and scrolls. Searching 
     Bite +5 1d6
 X - A lone duck stands in an otherwise empty room. It's extremely cute, and quacks meekly when
     you all open the door. Taking the duck with you gives unexplained advantage to skill rolls.
-    This is a reference to munchkins, "duck in a dungeon"
+    This is a reference to munchkins, "duck of doom."
 X - Three forlorn ducklings are waddling around the room, bumping into walls
     If the duck has been brought, the duck races to the ducklings and quacks happily.
     The duck then shoves its empty nest toward the players, in which they find a lustrous pearl.
@@ -133,7 +133,7 @@ X - Swirling glowing ghosts swarm the room, illuminated by a glowing green diamo
     AC 10
     Punch +6 2d8+2
     Water might blast away the clay which slowly reappears, but if the gem can be seized
-    (DC 14 Athletics + DC 14 Sleight of Hand) the golem melts and the clay soaks into the floor.
+    (DC 14 Athletics + DC 12 Sleight of Hand) the golem melts and the clay soaks into the floor.
     Failing either roll means the player is stuck in the clay and must lose their next turn
     making a DC 8 STR check to escape.
     The gem seems normal after defeat, although can probably be sold back to some other wizards. 
@@ -170,13 +170,12 @@ X - Each player rolls 1d4
     with no effect
 X - The players can hear somewhat muffled voices, of a few people talking - perhaps four?
     "We must levy a new tax for armor and weapons. Orcs and Zhents are gathering in the north."
-    "Orcs? What evidence do you have of that? A scout hasn't seen an orc in months."
+    "Orcs? What evidence do you have of that? No scout has seen an orc in months."
     "Well, Zhents at least, and where those untrustworthy rogues gather, lower creatures aren't
     far off."
-    "The Cult of the Dragon, too, no less, has been growing in strength and influence. Whispers of
-    a darkness, growing in strength. They're always up to no good, and this time it's
-    serious."
-    "You don't really think they could do it, do you? Summon her?"
+    "The Cult of the Dragon, too, no less, has been growing in strength and influence.
+    They're always up to no good, and this time it's serious."
+    "You don't really think they could do it, do you? Summon Her?"
     "Of course not. They're no threat to Phlan."
     Then the voices go silent.
     This room is designed to spy on the Phlan council room.
@@ -184,8 +183,8 @@ X - A font with crystal clear, perfectly still water sits in the middle of the r
     Carved into the rim is "Speak a name, to seek, to find, to see"
     A note is attached to the edge which reads:
     "Cross-planar use may lead to unintended side effects. No children."
-    It's a scrying pool.
-X - The players find a fountain glowing in soft slight. Drinking from the fountain heals the
+    It's a scrying pool. Design comedic effects if misused.
+X - The players find a fountain glowing in soft light. Drinking from the fountain heals the
     players entirely.
 X - The players are sucked into an entirely dark room. The air smells of sulphur and brimstone.
     Suddenly, an eight-foot tall duck appears, igniting in flames. It's holding a flaming whip in a wing.
@@ -202,12 +201,15 @@ X - The players are sucked into an entirely dark room. The air smells of sulphur
     After it dies, regular daylight fills the room, and the players can find the exit
 X - The tower has decided to be friendly for once, and shows you a final small room full of
     books. Sitting on a central pedestal is (1d4 for which of the three books, re-roll 1).
+    If the players are too suspicious, Melvin (if present) rushes in to get it,
+    suffering no consequence.
 
 Melvin is overjoyed to have a new book, and gingerly takes it. Archie doles out bags of gold.
 Melvin thanks the players and rides off with Archie.
 
 If the players inquire about the special surprise reward, Melvin exclaims "Yes! I almost forgot!"
-and hugs each player.
+and hugs each player (previous sessions in this series have yielded more magic
+items than is normal, so none today).
 
 Upon exiting the tower, the players find themselves transported to the magical trinkets shop.
 They must proceed through the shop to leave the area, any other exit simply teleports them to the

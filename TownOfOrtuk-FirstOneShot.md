@@ -62,6 +62,7 @@ Additional shouts fly up from the town as similar discoveries are made in househ
 In all, there are nine braided wreaths, and nine missing children - all between age 6 and 12 save
 one, Zant, who is 15.
 
+Feel free to add backstories to the children, here are some names:
 Mern
 Carla
 Strom
@@ -72,7 +73,7 @@ Renre
 Leilan
 Zant
 
-When brought together, the nine braids wither rapidly, turning a deep purple-black.
+If brought together, the nine braids wither rapidly, turning a deep purple-black.
 
 The townsfolk are freaking out, running around searching and calling out the names of the
 children. The innkeeper invites any traveling adventurers to search the forest - no locals are
@@ -98,8 +99,8 @@ coalesce at the edge of the clearing behind the older boy.
 A symbol is etched into the dirt in the center of the clearing pulses purple.
 A DC 14 Arcana check informs that this is the symbol of Shar, goddess of darkness and loss.
 
-Attempting to interact with the children is fruitless, entering the circle deals 1d4 magic damage
-and throws the player out of the circle.
+Attempting to interact with the children is fruitless, entering the circle deals
+2d4 magic damage (or half on a successful CON save DC 10) and throws the player out of the circle.
 
 Hiding in the purple fog are two Cursed Dryads. Stats of a Dryad, but glowing with cursed light.
 Add other features/effects of the curse of Shar for stronger parties or for fun.

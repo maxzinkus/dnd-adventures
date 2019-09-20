@@ -19,17 +19,18 @@ Chain mail, small shield, short sword
 As you continue into the town, the guard says "Wait! 'S a road tax. Tax for the road, y'see. One
 gold from each a ya" and extends an open palm.
 
-DC 13 Intimidation, Persuasion, or similar evades the tax. Upon failure the guard draws her sword
+DC 16 Intimidation, Persuasion, or similar evades the tax. Upon failure the guard draws her sword
 and you're surprised by how deftly she weilds it. Her earlier weariness fades slightly and you
 realize you cannot take her in a fight. "'S two gold each now!"
 
-Paying her, or a similar DC 18 check, placates her, refuse, and you're driven out of town and must
-find an alternate entrance.
+Paying her, or a DC 18 check for persuasion, placates her. Refuse, and you're driven
+out of town and must find an alternate entrance. Perhaps camp outdoors until the
+guards change.
 
 The irregular shapes of wooden buildings characterize the town as far from wealthy, but it isn't
 ramshackle. The cobble road passes east to west, bisecting the town.
 
-The town in primarily houses toward the edges, then shops and larger homes can be found nearer the
+The town is primarily houses toward the edges, then shops and larger homes can be found nearer the
 center. Children run through the streets chasing one another and laughing. The people seem content,
 if quiet.
 
@@ -40,6 +41,7 @@ speaking in hushes tones and glancing at others.
 
 Closer to the center of town, 17 passive perception or highest w/DC 17 Perception notices a shadow
 fleeting through an alleyway. Investigation reveals nothing but a sack of moldy potatoes.
+If handled, a potato squishes, releasing a wad of small worms.
 
 In the center of town, the cobble road meets with a river from the forest to the north. A large
 stone bridge and stone clock tower in the town square hints at days of wealth from logging and
@@ -69,13 +71,14 @@ well-made clothing. He is out purchasing food, and is very skittish if interacte
 If the players attempt to intimidate him for information, he shouts "please don't rob me!" and runs.
 
 Sina - sweeping in front of the apothecary shop. She is an herbalist and will sell the players
-potions of healing for 10 gold. She'll only talk about other customers, or a lack thereof, except
+potions of healing for 15 gold. She'll only talk about other customers, or a lack thereof, except
 for a few people coming through buying this and that. "Do you know how hard it is to run an
 apothecary shop when no one trusts anyone else?" If questioned about this, she says "What are you,
 thick? Haven't you heard of the Breeze Bandit? They're sending some paladin types over from Phlan
 just to have 'him caught!" If questioned about the bandit: "The Breeze Bandit is no mere thief, he's
 a shadow! Nothing's safe, not even my herbs, and I live in the back of the shop! Best you hide anything
-of worth yer carrying because no one knows who he is."
+of worth yer carrying because no one knows who he is. Well, I guess *you* all
+don't need to worry! HA!"
 
 Other villagers, seeing either or both of these two interactions (with Lorin and Sina) will
 actively avoid the players if approached.
@@ -149,6 +152,7 @@ HP 10
 AC 10
 12+1, 14+2, 11+0, 5-3, 6-2, 8-1
 Bite 1d6 DC 10 CON save against +2 poison damage
+(The apothecary will heal rabidness for 5 gold, for anyone bitten)
 
 * "This is the master's bedroom. Please do not touch anything."
 
@@ -213,14 +217,14 @@ asking the townsfolk to bury him. The dead paladin cannot be resurrected, attemp
 of dark purple.
 
 If the players side with Uta, the paladin quickly dies. Uta says "Thank you for your help.
-Everything I've stolen is buried just outside town the way you came in, behind the large rock
+Some of what I've stolen is buried just outside town the way you came in, behind the large rock
 north off the trail. You almost caught me coming back from there, I wasn't expecting travelers."
 Then she laughs, her cape shimmers around her, and she flies off into the night, disappearing.
 
 Once the battle is over, the townsfolk pour out of houses and out of the inn.
 All they saw was you all run into battle, and then Uta fly off into the night. They hail you as
 heroes. A finely dressed elder man says "Thank you for what you've done. You may stay in the inn
-free of charge tonight, we will bury these valiant soldiers of light, slain in battle. Tomorrow
+free of charge tonight, we will bury these/this valiant soldier/s of light, slain in battle. Tomorrow
 morning we will reward you properly.
 
 The following morning, the players can retrieve the treasure and be rewarded by the town.
@@ -229,7 +233,7 @@ The following morning, the players can retrieve the treasure and be rewarded by 
 +200 gold reward from Yorick for driving the Breeze Bandit out of town if the loot is returned.
 +400 gold and no magic items if the loot is not returned.
 
-If Bronn's fortune is returned, he gives the players Boots of Elvenkind.
+If Bronn's fortune is returned, he gives the players one Boots of Elvenkind.
   Advantage to stealth checks, silent footsteps.
 
 Freda, if the amulet is returned, gives the players another amulet: "This one isn't an heirloom,
