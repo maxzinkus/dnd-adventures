@@ -67,7 +67,7 @@ unsigned int roll(unsigned int num, const Die faces,
             if (ferror(urandom)) {
                perror("fread");
             }
-            return 0;
+            abort();
          }
          if (thresh > 0 && r >= thresh) {
             in = 0;
@@ -83,7 +83,7 @@ unsigned int roll(unsigned int num, const Die faces,
       result -= mod;
    }
    else {
-      return 0;
+      abort();
    }
    return result;
 }
