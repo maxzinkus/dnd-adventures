@@ -19,6 +19,7 @@ typedef enum {
    D6 = 6,
    D8 = 8,
    D10 = 10,
+   D12 = 12,
    D20 = 20,
    PERCENTILE = 100
 } Die;
@@ -28,6 +29,7 @@ typedef enum {
  */
 #define D6_THRESHOLD 252
 #define D10_THRESHOLD 250
+#define D12_THRESHOLD 252
 #define D20_THRESHOLD 240
 #define PERC_THRESHOLD 200
 
@@ -49,6 +51,9 @@ unsigned int roll(unsigned int num, const Die faces,
          break;
       case D10:
          thresh = D10_THRESHOLD;
+         break;
+      case D12:
+         thresh = D12_THRESHOLD;
          break;
       case D20:
          thresh = D20_THRESHOLD;
@@ -152,6 +157,7 @@ int main() {
                case D6:
                case D8:
                case D10:
+               case D12:
                case D20:
                case PERCENTILE:
                   prev = true;
